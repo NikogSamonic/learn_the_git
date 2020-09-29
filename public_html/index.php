@@ -1,9 +1,12 @@
-<!doctype html> 
+<?php
+$title = (isset($_GET['title'])) ? $_GET['title'] : 'Home Page';
+?>
+<!DOCTYPE html> 
 <html lang="en">
   <head>
     <meta charset="utf-8">
 
-    <title>The HTML5 Template</title>
+    <title><?= $title; ?></title>
     <meta name="description" content="The HTML5 Template">
     <meta name="author" content="SitePoint">
 
